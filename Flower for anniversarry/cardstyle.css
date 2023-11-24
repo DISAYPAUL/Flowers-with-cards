@@ -1,0 +1,128 @@
+.codepen-wrapper {
+position: relative;
+background-color: #D9DCD6;
+left: 400px; 
+bottom: 200px;
+  
+ 
+}
+
+.book {
+  height: 15rem;
+  width: 15rem;
+  font-size: 1.4rem;
+  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.25);
+  text-align: center;
+  position: relative;
+  color: #484e4a;
+  border-radius: 10px;
+}
+
+.page {
+  width: 100%;
+  height: 15rem;
+  perspective: 1500px;
+  border-radius: 10px;
+}
+.page__1 {
+  background-color: #54b8aa;
+  color: rgb(53, 35, 154);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: all 1s 0.3s;
+  transform-origin: 0 50%;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.page__1 p {
+text-align: center;
+  padding-top: 50px;
+}
+.p2 {
+  font-size: 12px;
+  padding-bottom: -50px;
+  color: aqua;
+  padding-left: 140px;
+  
+}
+.page__1::after {
+  content: '💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙';
+  color: #eff0eb;
+  position: absolute;
+  padding-top: 1rem;
+  top: 0;
+  left: 0;
+  background-color: #424B54;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transform: rotateY(180deg);
+  transition: all 0.3s 0.5s;
+}
+
+.page__1 h6{
+  text-align: left;
+  padding-right: 30px;
+  font-size: 10px;
+  padding-left: 15px;
+}
+.page__1 h5{
+  text-align: left;
+  padding-right: 30px;
+  font-size: 10px;
+  padding-left: 15px;
+}
+.page__2 {
+  background-color: #BAA898;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.page__2 p {
+  padding-top: 8px;
+ padding-right: 100px;
+  font-size: 15px;
+}
+
+.page__2 h6{
+  text-align: justify;
+  display: flex;
+  font-size: 8px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-top: 10px;
+  
+}
+
+.page__2 h5{
+  text-align: justify;
+  display: flex;
+  font-size: 8px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-top: 10px;
+  
+}
+
+.page:hover .page__1 {
+  transform: rotateY(-180deg);
+  box-shadow: 1.5rem 2rem 3rem rgba(0, 0, 0, 0.25);
+}
+.page:hover .page__1::after {
+  opacity: 1;
+}
+
+
+
